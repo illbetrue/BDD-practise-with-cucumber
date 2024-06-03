@@ -5,17 +5,11 @@ class HomePage extends BasePage {
   
 }
 
-class AboutPage extends BasePage {
-  
-}
-
 const pageFactory = (pageName) => {
   switch (pageName.toLowerCase()) {
     case 'homepage':
       return new HomePage();
-    case 'about':
-      return new AboutPage();
-    default:
+   default:
       return new BasePage();
   }
 };
